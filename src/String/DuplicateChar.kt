@@ -29,8 +29,6 @@ fun byNaiveApproach (str: String) {
             continue
         }else{
             already = already.append(str[i])
-            already = already.append(str[i])
-            already = already.append(str[i])
         }
         var count = 0
         for(j in 0 until str.length){
