@@ -23,31 +23,69 @@ fun main() {
 
 
     for ((str1, str2) in testCases) {
-        nativeAnagramCheck(str1.lowercase(), str2.lowercase())
+        //nativeAnagramCheck(str1.lowercase(), str2.lowercase())
+        //checkAnagram(str1, str2)
+        //collectionApproachBySort(str1, str2)
+        collectionApproachByMap(str1, str2)
+
     }
-    //nativeAnagramCheck(str1, str2)
-    //collectionApproach(str1.lowercase(), str2.lowercase())
 }
 
-fun collectionApproach(str1: String, str2: String) {
+fun collectionApproachByMap(str1: String, str2: String) {
+    val map1 = str1.replace(" ","").lowercase().groupingBy{it}.eachCount()
+    val map2  = str2.replace(" ", "").lowercase().groupingBy{it}.eachCount()
 
-    val mapFirst = mutableMapOf<Char, Int>()
-    str1.forEach {
-        mapFirst[it] = mapFirst.getOrDefault(it, 0) + 1
+    if (map1 == map2) {
+        print("\n $str1 $str2 : Anagrams")
+
+    } else {
+        print("\n $str1 $str2 : Not Anagrams")
     }
-    val mapSec = mutableMapOf<Char, Int>()
-    str2.forEach {
-        mapSec[it] = mapSec.getOrDefault(it, 0) + 1
-    }
-    mapFirst.forEach {
-        print(" $it")
-    }
-    print("\n")
-    mapSec.forEach {
-        print(" $it")
+}
+
+
+fun collectionApproachBySort(str1: String, str2: String) {
+
+    val s1Sorted = str1.replace("\\s+".toRegex(), "").toCharArray().sorted()
+    val s2Sorted = str2.replace(" ", "").toCharArray().sorted()
+
+
+    if (s1Sorted == s2Sorted) {
+        print("\n $str1 $str2 : Anagrams")
+
+    } else {
+        print("\n $str1 $str2 : Not Anagrams")
     }
 
 }
+
+fun checkAnagram(str1: String, str2: String) {
+    if (str1.length != str2.length) {
+        print("\n $str1 $str2  Not Anagrams")
+    } else {
+
+        val frequency = IntArray(256)
+
+        for (c in str1) {
+            frequency[c.code]++
+        }
+        for (c in str2) {
+            frequency[c.code]--
+        }
+
+        for (c in frequency) {
+            if (c != 0) {
+                print("\n $str1 $str2 Not Anagrams")
+                return
+            }
+
+        }
+        print("\n $str1 $str2  Anagrams")
+
+
+    }
+}
+
 
 fun nativeAnagramCheck(str1: String, str2: String) {
     if (str1.length != str2.length) {
@@ -57,8 +95,7 @@ fun nativeAnagramCheck(str1: String, str2: String) {
 
     var isAnagram = true
     for (i in 0 until str1.length) {
-        if(str1[i] == ' ')
-        {
+        if (str1[i] == ' ') {
             continue
         }
         var selfCount = 0
@@ -67,7 +104,7 @@ fun nativeAnagramCheck(str1: String, str2: String) {
                 selfCount++
             }
         }
-       // print("\ni > ${str1[i]} > $selfCount")
+        // print("\ni > ${str1[i]} > $selfCount")
         var count = 0
         for (j in 0 until str2.length) {
             if (str1[i] == str2[j]) {
@@ -75,7 +112,7 @@ fun nativeAnagramCheck(str1: String, str2: String) {
                 count++
             }
         }
-       // print("\nCount > $count selfCount> $selfCount")
+        // print("\nCount > $count selfCount> $selfCount")
         if (count != selfCount) {
             isAnagram = false
             break
@@ -84,7 +121,7 @@ fun nativeAnagramCheck(str1: String, str2: String) {
     if (isAnagram) {
         print("\n $str1 $str2  Anagrams")
 
-    }else{
+    } else {
         print("\n $str1 $str2  Not Anagrams")
     }
 }
