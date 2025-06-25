@@ -59,7 +59,3 @@ fun removeDuplicate(arr: Array<Int>) {
     }
 
 }
-/*
-fun removeDuplicate(arr: IntArray){
-
-}*/
