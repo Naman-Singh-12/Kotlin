@@ -7,9 +7,20 @@ fun main(){
 }
 
 fun leftRotateByOne(arr: Array<Int>) {
-    arr[arr.size-1] = arr[arr.size-1] + arr[0]
-    arr[0] = arr[arr.size-1] - arr[0]
-    arr[arr.size-1] = arr[arr.size-1] - arr[0]
+    for(i in 0 until arr.size)
+    {
+
+        var d= arr[i]
+        for(j in 0 until arr.size) {
+            if ((j + 1) == arr.size) {
+                break
+            }
+            arr[i + 1] = arr[i + 1] + arr[0]
+            arr[0] = arr[i + 1] - arr[0]
+            arr[i + 1] = arr[i + 1] - arr[0]
+        }
+    }
+
 
     arr.forEach{
         print(" $it")
