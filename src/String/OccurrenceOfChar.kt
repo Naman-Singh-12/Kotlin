@@ -3,7 +3,7 @@ package String
 fun main(){
 
     print("Occurrence of each character in string")
-    val arr = arrayOf("aa aAa","नमस्ते","abc123","&*()","Aa","abc")
+    val arr = arrayOf("aa aAa","abc123","&*()","Aa","abc")
     arr.forEach{
         //checkOccurrenceByNative(it.replace(" ","").lowercase())
         checkOccurrenceByUni(it.replace(" ","").lowercase())
@@ -13,14 +13,24 @@ fun main(){
 
 fun checkOccurrenceByUni(str: String) {
 
-    var frequency = IntArray(256){0}
+    val frequency = IntArray(256) { 0 }
+    val visited = BooleanArray(256) { false }
 
-    for(i in str){
+
+    for (i in str) {
         frequency[i.code]++
     }
-    for (ch in str.toSet()) {
-        println("\n $ch : ${frequency[ch.code]}")
+
+    for (ch in str) {
+        if (!visited[ch.code]) {
+            println("\n$ch : ${frequency[ch.code]}")
+            visited[ch.code] = true
+        }
     }
+
+    /*for (ch in str.toSet()) {
+        println("\n $ch : ${frequency[ch.code]}")
+    }*/
 
 
 }
