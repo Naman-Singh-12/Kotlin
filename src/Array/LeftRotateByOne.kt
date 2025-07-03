@@ -7,19 +7,14 @@ fun main(){
 }
 
 fun leftRotateByOne(arr: Array<Int>) {
-    for(i in 0 until arr.size)
-    {
 
-        var d= arr[i]
-        for(j in 0 until arr.size) {
-            if ((j + 1) == arr.size) {
-                break
-            }
-            arr[i + 1] = arr[i + 1] + arr[0]
-            arr[0] = arr[i + 1] - arr[0]
-            arr[i + 1] = arr[i + 1] - arr[0]
-        }
+    var first = arr[0]
+
+    for(j in 0 until arr.size-1) {
+        arr[j] = arr[j+1]
     }
+
+    arr[arr.size -1] = first
 
 
     arr.forEach{
