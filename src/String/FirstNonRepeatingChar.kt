@@ -21,7 +21,25 @@ fun main(){
     )
     for(i in inputs) {
         println("First non repetitive char in $i is : ${nativeWay(i)}")
+        println("First non repetitive char in $i is : ${collectionWay(i)}")
     }
+}
+
+fun collectionWay(str: String): String {
+     var countNonRepeat = mutableMapOf<Char, Int>()
+
+    for(ch in str){
+        countNonRepeat[ch] = countNonRepeat.getOrDefault(ch,0)+1
+    }
+
+    for(ch in str){
+        if(countNonRepeat[ch] == 1){
+           return ch.toString()
+        }
+    }
+
+    return "Non"
+
 }
 
 fun nativeWay(str: String): String {
