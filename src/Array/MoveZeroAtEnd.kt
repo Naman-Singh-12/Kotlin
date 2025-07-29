@@ -16,7 +16,8 @@ fun main(){
     )
     for(test in testInputs) {
         //moveZeroAtEnd(test)
-        moveZeroWithOptimise(test)
+        //moveZeroWithOptimise(test)
+        byCollection(test)
     }
 }
 
@@ -56,6 +57,17 @@ fun moveZeroAtEnd(arr: IntArray){
     }
 
     for(i in arr){
+        print(" $i")
+    }
+    println("")
+}
+
+fun byCollection(arr: IntArray){
+
+   val nonZero = arr.filter { it != 0 }
+    val zeroCount =  arr.size - nonZero.size
+    val result = nonZero + List(zeroCount){0}
+    for(i in result){
         print(" $i")
     }
     println("")
