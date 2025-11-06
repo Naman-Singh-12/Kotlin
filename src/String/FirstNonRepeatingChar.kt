@@ -20,8 +20,8 @@ fun main(){
         "aaabcccdeeef"
     )
     for(i in inputs) {
-        println("First non repetitive char in $i is : ${nativeWay(i)}")
-        println("First non repetitive char in $i is : ${collectionWay(i)}")
+        println("First non repetitive char in $i is : ${linkedHashMapWay(i)}")
+       // println("First non repetitive char in $i is : ${collectionWay(i)}")
     }
 }
 
@@ -81,4 +81,30 @@ fun nativeWayByChatGPT(str: String): String {
     }
     return "Non"
 }
+
+// 06-11-25
+
+fun collectionWaySec(str: String): String{
+
+    val freq = mutableMapOf<Char, Int>()
+    for(ch in str){
+        freq[ch] = freq.getOrDefault(ch,0)+1
+    }
+    for(ch in str){
+        if (freq[ch] == 1) return ch.toString()
+    }
+
+    return "-"
+
+}
+
+fun linkedHashMapWay(str: String): String?{
+    val map = linkedMapOf<Char, Int>()
+    str.forEach {  map[it] = map.getOrDefault(it, 0)+1}
+    return (map.entries.firstOrNull { it.value == 1 }?.key)?.toString() ?: "-"
+
+
+}
+
+fun firstUnique(str: String) = str.firstOrNull { ch -> str.count { it == ch } == 1 }?.toString() ?: "-"
 

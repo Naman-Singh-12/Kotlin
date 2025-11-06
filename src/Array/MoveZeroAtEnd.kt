@@ -15,13 +15,17 @@ fun main(){
         intArrayOf(0, 1, 0, 2, 3, 0, 4, 0, 5, 0, 6) // Longer mixed array
     )
     for(test in testInputs) {
-        //moveZeroAtEnd(test)
+        moveZeroAtEnd(test)
         //moveZeroWithOptimise(test)
-        byCollection(test)
+        //byCollection(test)
     }
 }
 
 fun moveZeroWithOptimise(test: IntArray) {
+    println("\n1 >>")
+    for(i in test){
+        print("  $i")
+    }
     var pos = 0
     for(i in 0 until test.size){
         if(test[i] != 0){
@@ -29,12 +33,16 @@ fun moveZeroWithOptimise(test: IntArray) {
             pos++
         }
     }
-
+    println("\n2 >>")
+    for(i in test){
+        print(" $i")
+    }
     while(pos < test.size)
     {
         test[pos] = 0
         pos++
     }
+    println("\n3 >>")
     for(i in test){
         print(" $i")
     }
