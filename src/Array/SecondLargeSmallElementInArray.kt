@@ -32,3 +32,4 @@ fun findSecondValue(arr: Array<Int>) {
     println("\nSecond Largest Element is : ${arr[arr.size-2]}")
     println("Second Smallest Element is : ${arr[1]}")
 }
+
