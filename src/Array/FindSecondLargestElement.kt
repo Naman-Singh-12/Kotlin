@@ -20,8 +20,8 @@ fun main() {
         arrayOf(1, 1, 1, 2)
     )
 
-    for (i in testInputs.size-1 until testInputs.size) {
-        println("Second Largest Element is : ${findSecondLargest(testInputs[i])}")
+    for (i in testInputs.size until testInputs.size) {
+        println("Second Largest Element is : ${findSecondLargestSec(testInputs[i])}")
     }
 
 
@@ -37,7 +37,6 @@ fun findSecondLargestSec(arr: Array<Int>): String {
     for(i in 0 until arr.size){
         arrayOf(45, 12, 89, 89, 34, 12)
         if(secondLarge > arr[i] && secondLarge < firstLarge){
-
         }else{
             if(secondLarge < arr[i]){
                 if(firstLarge < arr[i])
@@ -45,13 +44,9 @@ fun findSecondLargestSec(arr: Array<Int>): String {
                     secondLarge  = firstLarge
                     firstLarge = arr[i]
                 }
-
             }
-
         }
-
     }
-
     return secondLarge.toString()
 }
 
