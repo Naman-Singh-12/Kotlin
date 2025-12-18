@@ -1,4 +1,4 @@
-package String
+package Old.String
 
 fun main(){
     print("Duplicate character in string")

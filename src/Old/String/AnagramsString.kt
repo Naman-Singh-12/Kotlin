@@ -1,7 +1,7 @@
-package String
+package Old.String
 
 fun main() {
-    print("Anagrams String")
+    print("Anagrams Old.String")
 
     // Test Case 6: Case Sensitivity - Decide if you want to ignore case
 

@@ -1,7 +1,4 @@
-package Collection
-
-import Array.findMissingNumber
-import Array.moveZeroAtEnd
+package Old.Collection
 
 fun main(){
 

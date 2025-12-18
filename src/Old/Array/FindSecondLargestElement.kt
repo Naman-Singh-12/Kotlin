@@ -1,7 +1,7 @@
-package Array
+package Old.Array
 
 fun main() {
-    println("Find Second largest Element in Array")
+    println("Find Second largest Element in Old.Array")
     val testInputs = listOf(
         arrayOf(1, 2, 3, 4, 5),
         arrayOf(5, 4, 3, 2, 1),

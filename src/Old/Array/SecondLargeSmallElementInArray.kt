@@ -1,4 +1,4 @@
-package Array
+package Old.Array
 
 fun main() {
     var arr = arrayOf(3, 6, 1, 8, 5, 0)

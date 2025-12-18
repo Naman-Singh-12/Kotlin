@@ -1,4 +1,4 @@
-package Array
+package Old.Array
 
 fun main(){
     print("Left rotate array by one place\n")

@@ -1,8 +1,8 @@
-package Array
+package Old.Array
 
 fun main() {
 
-    print("Sorted Array\n")
+    print("Sorted Old.Array\n")
     var arr = arrayOf(3, 5, 1, 6, 8, 23, 8)
     arraySort(arr)
 }

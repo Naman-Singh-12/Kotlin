@@ -1,4 +1,4 @@
-package String
+package Old.String
 
 fun main() {
     println("Count type of char in string ;)")
@@ -62,7 +62,7 @@ fun countCharSec(str: String) {
     var consonantsCount = 0
     var digitCount = 0
     var specialCount = 0
-    println(" String : $str")
+    println(" Old.String : $str")
     for (i in 0 until str.length) {
 
         if (str[i].code >= 97 && str[i].code <= 122) {

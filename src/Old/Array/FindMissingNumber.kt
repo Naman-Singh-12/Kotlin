@@ -1,7 +1,7 @@
-package Array
+package Old.Array
 
 fun main(){
-    print("Find missing Number in Array\n")
+    print("Find missing Number in Old.Array\n")
     val testCases = arrayOf(
         intArrayOf(5, 3, 1, 2),               // Missing 4
         intArrayOf(2, 3, 4, 5),               // Missing 1

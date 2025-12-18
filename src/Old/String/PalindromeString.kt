@@ -1,8 +1,8 @@
-package String
+package Old.String
 
 fun main(){
 
-    print("Palindrome String\n")
+    print("Palindrome Old.String\n")
     var str = "Lol"
 
     print("In normal $str is : ${isPalindrome(str)}")

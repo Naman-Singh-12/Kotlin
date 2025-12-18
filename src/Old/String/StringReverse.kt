@@ -1,10 +1,10 @@
-package String
+package Old.String
 
 import kotlin.ranges.downTo
 
 fun main(){
 
-    print("Revers String\n")
+    print("Revers Old.String\n")
     var str = "Singh"
 
     simpleFor(str)

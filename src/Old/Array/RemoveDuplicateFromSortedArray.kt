@@ -1,4 +1,4 @@
-package Array
+package Old.Array
 
 fun main(){
     println("Duplicated form sorted array")

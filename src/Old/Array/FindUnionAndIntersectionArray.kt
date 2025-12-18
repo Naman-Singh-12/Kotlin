@@ -1,4 +1,4 @@
-package Array
+package Old.Array
 
 fun main(){
     print("Find Union and Intersection of two Arrays\n")
@@ -21,7 +21,7 @@ fun findUnionAndIntersection(arr1: Array<Int>, arr2: Array<Int>) {
                 unionArr = unionArr+arr1[i].toString()
             }else{
 
-               // println("Intersection Array : $intersectionArr , Arr1 > ${arr1[i]}, Arr2 > ${arr2[j]}")
+               // println("Intersection Old.Array : $intersectionArr , Arr1 > ${arr1[i]}, Arr2 > ${arr2[j]}")
                 if(!intersectionArr.contains(arr1[i].toString())){
                     intersectionArr = intersectionArr+arr1[i].toString()
                 }
