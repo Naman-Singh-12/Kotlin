@@ -1,0 +1,185 @@
+WEEK-WISE DSA PRACTICE PLAN (PATTERN BASED)
+________________________________________
+🔹 0.1 ARRAYS (FOUNDATION – WEEK 0)
+Easy
+1.	Find maximum & minimum in array
+2.	Reverse an array
+3.	Check if array is sorted
+4.	Remove duplicates from sorted array
+Medium
+5.	Rotate array by K steps
+6.	Move all zeros to end
+7.	Find second largest element
+Hard
+8.	Maximum subarray sum (Kadane’s Algorithm)
+9.	Merge two sorted arrays (without extra space)
+👉 Goal:
+Array traversal, indexing, edge cases
+________________________________________
+🔹 0.2 STRINGS (FOUNDATION – WEEK 0)
+Easy
+1.	Reverse a string
+2.	Check palindrome
+3.	Count vowels & consonants
+Medium
+4.	Check anagram
+5.	Longest common prefix
+6.	Remove duplicate characters
+Hard
+7.	String compression
+8.	Longest substring without repeating characters
+9.	Minimum window substring (intro level)
+👉 Goal:
+Indexing, character frequency, substring logic
+________________________________________
+🔥 CORE PATTERN PRACTICE (MAIN WEEKS)
+________________________________________
+1 SLIDING WINDOW (WEEK 1)
+Easy
+1.	Maximum sum subarray of size K
+2.	Average of subarrays of size K
+Medium
+3.	Longest substring without repeating characters
+4.	Longest substring with at most K distinct characters
+5.	Minimum size subarray sum ≥ S
+Hard
+6.	Sliding window maximum
+7.	Minimum window substring
+8.	Longest repeating character replacement
+👉 Master this = huge confidence boost
+________________________________________
+2 TWO POINTERS (WEEK 2)
+Easy
+1.	Reverse array
+2.	Check palindrome
+Medium
+3.	Two Sum (sorted array)
+4.	Remove duplicates from sorted array
+5.	Square of sorted array
+Hard
+6.	Container with most water
+7.	3Sum
+8.	Trapping rain water
+________________________________________
+3 HASHING (MAP / SET) (WEEK 3)
+Easy
+1.	Two Sum
+2.	First non-repeating character
+3.	Count frequency of elements
+Medium
+4.	Group anagrams
+5.	Longest consecutive sequence
+6.	Subarray sum equals K
+Hard
+7.	Longest substring without repeating characters
+8.	Top K frequent elements
+📌 Most important pattern for mobile devs
+________________________________________
+4 PREFIX SUM (WEEK 4)
+Easy
+1.	Range sum query
+2.	Running sum of array
+Medium
+3.	Subarray sum equals K
+4.	Find pivot index
+Hard
+5.	Maximum size subarray sum equals K
+6.	Continuous subarray divisible by K
+________________________________________
+5 BINARY SEARCH (WEEK 5)
+Easy
+1.	Binary search (classic)
+2.	First & last occurrence
+Medium
+3.	Search in rotated sorted array
+4.	Find square root of number
+5.	Peak element
+Hard
+6.	Koko eating bananas
+7.	Minimum days to make bouquets
+8.	Binary search on answer (concept)
+________________________________________
+6 STACK PATTERN (WEEK 6)
+Easy
+1.	Valid parentheses
+2.	Implement stack using array
+Medium
+3.	Next greater element
+4.	Stock span problem
+Hard
+5.	Largest rectangle in histogram
+6.	Daily temperatures
+7.	Remove K digits
+📱 Very common in Android interviews
+________________________________________
+7 QUEUE / BFS (WEEK 7)
+Easy
+1.	Implement queue
+2.	Level order traversal (binary tree)
+Medium
+3.	Number of islands
+4.	Rotting oranges
+Hard
+5.	Shortest path in binary matrix
+6.	Word ladder (intro)
+________________________________________
+ 8 RECURSION (WEEK 8)
+Easy
+1.	Print numbers using recursion
+2.	Factorial
+Medium
+3.	Reverse linked list
+4.	Fibonacci (with memo)
+Hard
+5.	Tree traversals (Inorder / Preorder)
+6.	Recursion vs iteration explanation
+________________________________________
+ 9 FAST & SLOW POINTER (WEEK 9)
+Easy
+1.	Find middle of linked list
+Medium
+2.	Detect cycle in linked list
+3.	Happy number
+Hard
+4.	Find start of cycle
+5.	Palindrome linked list
+________________________________________
+10  DYNAMIC PROGRAMMING (WEEK 10)
+Easy
+1.	Fibonacci (memo + tabulation)
+Medium
+2.	Climbing stairs
+3.	House robber
+Hard
+4.	Coin change
+5.	Longest increasing subsequence
+📌 Only basic DP needed for mobile devs
+________________________________________
+11 BACKTRACKING (WEEK 11)
+Easy
+1.	Generate subsets
+Medium
+2.	Permutations
+3.	Combinations
+Hard
+4.	N-Queens (conceptual)
+5.	Word search
+________________________________________
+12 GREEDY (WEEK 12)
+Easy
+1.	Assign cookies
+Medium
+2.	Jump game
+3.	Activity selection
+Hard
+4.	Gas station
+5.	Minimum platforms
+________________________________________
+✅ HOW YOU SHOULD PRACTICE EACH WEEK
+For each problem:
+1.	Identify pattern first
+2.	Write brute force
+3.	Optimize
+4.	Explain time & space complexity
+5.	Say real mobile use case
+
