@@ -1,0 +1,13 @@
+🔹 0.1 ARRAYS (FOUNDATION – WEEK 0)
+Easy
+1.	Find maximum & minimum in array
+2.	Reverse an array
+3.	Check if array is sorted
+4.	Remove duplicates from sorted array
+Medium
+5.	Rotate array by K steps
+6.	Move all zeros to end
+7.	Find second largest element
+Hard
+8.	Maximum subarray sum (Kadane’s Algorithm)
+9.	Merge two sorted arrays (without extra space)
